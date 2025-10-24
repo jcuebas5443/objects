@@ -1,0 +1,65 @@
+body {
+    background-color: #f7f9fc;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    padding: 20px;
+    
+}
+
+
+#app-container {
+    width: 100%;
+    max-width: 512px;
+    margin: 32px auto 0 auto;
+    padding: 24px; 
+    background-color: grey;
+    border-radius: 12px;
+    border: 1px solid #f3f4f6;
+    
+}
+
+
+.filter-button {
+   
+    flex-grow: 1; 
+    padding: 8px; 
+    border-radius: 6px; 
+    font-weight: 500; 
+    font-size: 14px; 
+    
+    
+    background-color: #e5e7eb; 
+    color: grey; 
+    border: none;
+    cursor: pointer;
+}
+
+.filter-button:hover {
+    background-color: darkgrey; 
+}
+
+
+.filter-button.active {
+    
+    background-color: blue; 
+    color: #ffffff; 
+    
+}
+
+.filter-button.active:hover {
+    background-color: darkblue; 
+}
+
+
+#grocery-list li{
+    padding: 8px 0;
+    cursor: pointer;
+    color: lightblue;
+}
+
+
+#grocery-list li.purchased {
+    text-decoration: line-through ;
+}
