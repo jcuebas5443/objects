@@ -3,46 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="index.css ">
+    <title>Grocery List Manager</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    
-   
 
+    <div id="app-container">
 
+        <div id="appTitle">
+            <h1>Grocery List</h1>
+        </div>
 
-<ul id="ul">
-</ul>
-<button id="btn_1" onclick="multi()">lets make a table</button>
-<br>
-<br>
+        <div id="add-item-bar">
+            <input type="text" id="item-input" placeholder="Add a new item "aria-label="New item name">
+            <button id="add-button" onclick= addGrocery()>Add</button>
+        </div>
 
+        <div id="view-controls">
+            <button id="view-all" class="filter-button active">All Items</button>
+            <button id="view-unpurchased" class="filter-button">Needs Purchase</button>
+            <button id="view-purchased" class="filter-button" >Purchased</button>
+        </div>
 
-
-
-
- <div id="daDiv">
+        <ul id="grocery-list">
+            
+        </ul>
+        
     </div>
-    <select id="colorSelect">
-    <option value="">--Select Color--</option>
-    <option value="red">Red</option>
-    <option value="green">Green</option>
-    <option value="blue">Blue</option>
-    <option value="random">Random</option>
-    <option value="reset">Reset</option>
-</select>
 
-
-
-
-
-
-
-
-
-
-
-   <script src ="index.js"></script>
+    <script src="index.js "></script>
 </body>
 </html>
